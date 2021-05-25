@@ -1,0 +1,486 @@
+/* ------------------------- MAIN STYLE ------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/* ------------------------- REUSABLE COMPONENT ------------------------- */
+
+section {
+  padding: 80px 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  color: white;
+  font-size: 240%;
+  word-spacing: 4px;
+  margin: 0 0 20px 0;
+}
+
+h2 {
+  color: black;
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+h2::after {
+  display: block;
+  height: 2px;
+  background-color: #fd5b03;
+  content: " ";
+  width: 100px;
+  margin: 30px auto 0 auto;
+}
+
+h3 {
+  font-size: 110%;
+  margin: 0 0 15px 0;
+  letter-spacing: 0;
+}
+
+blockquote {
+  position: relative;
+  padding: 2%;
+  font-style: italic;
+  text-align: justify;
+  line-height: 145%;
+}
+
+blockquote::before {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  content: "\201C";
+  font-size: 400%;
+}
+
+/* blockquote::after {
+  display: block;
+  position: absolute;
+  bottom: 50px;
+  right: 8px;
+  content: "\201D";
+  font-size: 400%;
+} */
+
+cite {
+  display: block;
+  margin: 25px 0 0 0;
+  font-size: 90%;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* ------------------------- ICON ------------------------- */
+
+.icon-big {
+  color: #fd5b03;
+  display: block;
+  font-size: 350%;
+  margin: 10px auto;
+}
+
+.icon-small {
+  margin: -2px 15px 0 0;
+  color: #cb4902;
+  font-size: 130%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* ------------------------- LINK ------------------------- */
+
+a:link,
+a:visited {
+  padding: 0 0 1px 0;
+  border-bottom: 1px solid #cb4902;
+  color: #cb4902;
+  text-decoration: none;
+  transition: border 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
+/* ------------------------- HEADER MAIN ------------------------------ */
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ------------------------- NAVIGATION ------------------------- */
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin: 20px 0 0 0;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin: 55px 0 0 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #fd5b03;
+}
+
+/* ------------------------- HEADER BUTTON ------------------------------ */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  color: #fff;
+  border: 1px solid #fd5b03;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-main:link,
+.btn-main:visited {
+  background-color: #fd5b03;
+  margin: 0 15px 0 0;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  color: #fd5b03;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cb4902;
+  border: 1px solid #cb4902;
+}
+
+/*.btn-main:hover,
+  .btn-main:active {
+
+  } */
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  color: #fff;
+  background-color: #cb4902;
+}
+
+/* ------------------------- FEATURES ------------------------- */
+
+#features .long-copy {
+  margin: 0 auto 30px auto;
+}
+
+.long-copy {
+  line-height: 140%;
+  width: 70%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.box {
+  padding: 1%;
+}
+
+.box p {
+  line-height: 145%;
+  font-size: 80%;
+  text-align: justify;
+}
+
+.box h3 {
+  text-align: center;
+}
+
+/* ------------------------- SHOWCASE ------------------------- */
+
+#favourite {
+  padding: 0;
+  border-top: 2px solid #555;
+  border-bottom: 2px solid #555;
+}
+
+#favourite ul {
+  display: flow-root;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+}
+
+.meals-showcase li {
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.meal-photo img {
+  width: 100%;
+  opacity: 100%;
+  transform: scale(115%);
+  transition: transform 0.5s, opacity 0.5s;
+  vertical-align: bottom;
+}
+
+.meal-photo figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.meal-photo:hover figcaption {
+  opacity: 1;
+}
+
+.meal-photo:hover img {
+  opacity: 50%;
+  transform: scale(100%);
+}
+
+/* ------------------------- MOBILE APP ------------------------- */
+
+#how-to {
+  background-color: rgb(230, 230, 230);
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.step-box:first-child {
+  text-align: right;
+  padding: 0 3% 0 0;
+  margin: 30px 0 0 0;
+}
+
+.step-box:last-child {
+  padding: 0 0 0 3%;
+  margin: 70px 0 0 0;
+}
+
+.app-step {
+  margin: 0 0 50px 0;
+}
+
+.app-step:last-of-type {
+  margin: 0 0 80px 0;
+}
+.app-step div {
+  float: left;
+  padding: 5px;
+  margin: 0 25px 0 0;
+  height: 50px;
+  width: 50px;
+  color: #fd5b03;
+  font-size: 150%;
+  border: 2px solid #fd5b03;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.app-button:link,
+.app-button:visited,
+.app-button:hover,
+.app-button:active {
+  border: 0;
+}
+
+.app-button img {
+  width: auto;
+  height: 50px;
+  margin: 0 10px 0 0;
+}
+
+/* ------------------------- CITY LIST ------------------------- */
+
+.box img {
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.city-detail {
+  margin: 20px 0 0 0;
+  list-style: none;
+}
+
+.city-detail li {
+  margin: 0 0 10px 0;
+  font-size: 90%;
+}
+
+/* ------------------------- TESTIMONY ------------------------- */
+
+#testimony {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("img/back-customers.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#testimony h2 {
+  color: inherit;
+}
+
+#testimony blockquote {
+  margin: 20px 0 0 0;
+}
+
+.customer-pic {
+  width: auto;
+  height: 45px;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+
+/* ------------------------- PLANS ------------------------- */
+
+#plan {
+  background-color: rgb(230, 230, 230);
+}
+
+#plan h3 {
+  text-align: center;
+}
+
+/* #plan h3::after {
+  display: block;
+  height: 1px;
+  background-color: rgb(230, 230, 230);
+  content: " ";
+  width: 120px;
+  margin: 15px auto 0 auto;
+} */
+
+.plan-box {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 2px rgb(200, 200, 200);
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.plan-box div:first-child {
+  background-color: rgb(245, 245, 245);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+  border: none;
+  text-align: center;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 10px 0;
+}
+
+.plan-price {
+  color: #fd5b03;
+  font-size: 300%;
+  font-weight: 100;
+  margin: 0 0 10px 0;
+}
+
+.plan-price span {
+  font-size: 50%;
+}
+
+.plan-price-meal {
+  font-size: 80%;
+}
