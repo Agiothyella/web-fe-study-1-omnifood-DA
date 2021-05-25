@@ -460,6 +460,95 @@
           </div>
         </div>
       </section>
+      <section id="message">
+        <div class="row">
+          <h2>We're happy to hear from you</h2>
+        </div>
+        <div class="row">
+          <form method="POST" action="#submit" class="message-form">
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="message-name">Name</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input
+                  type="text"
+                  name="name"
+                  id="message-name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="message-email">Email</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input
+                  type="email"
+                  name="email"
+                  id="message-email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="find-us">How did you find us?</label>
+              </div>
+              <div class="col span-2-of-3">
+                <select name="find-us" id="find-us">
+                  <option value="friends">Friends</option>
+                  <option value="advertisment" selected>Advertisment</option>
+                  <option value="search-engine">Search Engine</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label>Newsletter</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input
+                  type="checkbox"
+                  name="news"
+                  id="news"
+                  placeholder=""
+                  checked
+                />
+                <label for="news"
+                  ><span class="message-form-text">Yes please!</span></label
+                >
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="message-text">Drop us a line</label>
+              </div>
+              <div class="col span-2-of-3">
+                <textarea
+                  name="message-text"
+                  id="message-text"
+                  cols="30"
+                  rows="10"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label>&nbsp;</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="submit" value="Send Message" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -469,43 +558,6 @@
 </html>
 
 <!-- 
-
-
-()
-
-
-()
-
- -->
-
-<!-- 
-
-Section 6: Sign up and pricing plans
-Title: 
-
-Plan 1: Premium
-399$ per month
-That’s only 13.30$ per meal
-1 meal every day
-Order 24/7
-Access to newest creations
-Free delivery
-
-
-Plan 2: Pro
-149$ per month
-That’s only 14.90$ per meal
-1 meal 10 days/month
-Order 24/7
-Access to newest creations
-Free delivery
-
-
-Plan 3: Starter
-19$ per meal
-1 meal
-Order from 8 am to 12 pm
-Free delivery
 
 Section 7: Contact form
 Title: We're happy to hear from you

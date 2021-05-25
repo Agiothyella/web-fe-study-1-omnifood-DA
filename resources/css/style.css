@@ -148,6 +148,47 @@ a:active {
   border-bottom: 1px solid transparent;
 }
 
+/* ------------------------- BUTTON ------------------------------ */
+
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  color: #fff;
+  border: 1px solid #fd5b03;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-main:link,
+.btn-main:visited,
+input[type="submit"] {
+  background-color: #fd5b03;
+  margin: 0 15px 0 0;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  color: #fd5b03;
+}
+
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #cb4902;
+  border: 1px solid #cb4902;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  color: #fff;
+  background-color: #cb4902;
+}
+
 /* ------------------------- HEADER MAIN ------------------------------ */
 .hero-text-box {
   position: absolute;
@@ -193,48 +234,6 @@ a:active {
   border-bottom: 2px solid #fd5b03;
 }
 
-/* ------------------------- HEADER BUTTON ------------------------------ */
-
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  padding: 10px 30px;
-  font-weight: 300;
-  text-decoration: none;
-  border-radius: 200px;
-  color: #fff;
-  border: 1px solid #fd5b03;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
-
-.btn-main:link,
-.btn-main:visited {
-  background-color: #fd5b03;
-  margin: 0 15px 0 0;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-  color: #fd5b03;
-}
-
-.btn:hover,
-.btn:active {
-  background-color: #cb4902;
-  border: 1px solid #cb4902;
-}
-
-/*.btn-main:hover,
-  .btn-main:active {
-
-  } */
-
-.btn-ghost:hover,
-.btn-ghost:active {
-  color: #fff;
-  background-color: #cb4902;
-}
-
 /* ------------------------- FEATURES ------------------------- */
 
 #features .long-copy {
@@ -266,8 +265,8 @@ a:active {
 
 #favourite {
   padding: 0;
-  border-top: 2px solid #555;
-  border-bottom: 2px solid #555;
+  border-top: 1px solid #fd5b03;
+  border-bottom: 1px solid #fd5b03;
 }
 
 #favourite ul {
@@ -470,6 +469,10 @@ a:active {
   padding: 10px 0;
 }
 
+.plan-box p {
+  text-align: center;
+}
+
 .plan-price {
   color: #fd5b03;
   font-size: 300%;
@@ -482,5 +485,61 @@ a:active {
 }
 
 .plan-price-meal {
+  font-size: 80%;
+}
+
+/* ------------------------- MESSAGE ------------------------- */
+
+#message input,
+#message select,
+#message textarea {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 80%;
+}
+
+#message textarea {
+  height: 100px;
+  min-height: 2em;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+#message input[type="checkbox"] {
+  width: min-content;
+  margin: 10px 5px 10px 0;
+}
+
+#message input[type="submit"] {
+  width: 40%;
+  margin: 0 0 0 30%;
+}
+
+#message input[type="submit"]:last-child {
+  border-radius: 200px;
+}
+
+#message input:focus,
+#message select:focus,
+#message textarea:focus {
+  outline: none;
+}
+
+#find-us {
+  color: #555;
+}
+
+.message-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.message-form input:last-child {
+  width: 50%;
+}
+
+.message-form-text {
   font-size: 80%;
 }
