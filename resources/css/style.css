@@ -293,7 +293,7 @@ input[type="submit"]:active {
 
 .meal-photo img {
   width: 100%;
-  opacity: 100%;
+  opacity: 50%;
   transform: scale(115%);
   transition: transform 0.5s, opacity 0.5s;
   vertical-align: bottom;
@@ -307,7 +307,8 @@ input[type="submit"]:active {
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
+  text-shadow: 0px 0px 5px black;
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -317,7 +318,7 @@ input[type="submit"]:active {
 }
 
 .meal-photo:hover img {
-  opacity: 50%;
+  opacity: 90%;
   transform: scale(100%);
 }
 
@@ -542,4 +543,103 @@ input[type="submit"]:active {
 
 .message-form-text {
   font-size: 80%;
+}
+
+/* ------------------------- FOOTER ------------------------- */
+
+footer {
+  padding: 20px;
+  background-color: #333;
+}
+
+footer p {
+  margin: 20px 0 0 0;
+  color: rgb(110, 110, 110);
+  font-size: 80%;
+  text-align: center;
+}
+
+footer .icon-small {
+  color: inherit;
+  margin: 0;
+}
+
+.footer {
+  list-style: none;
+}
+
+.footer a:link,
+.footer a:visited {
+  border: none;
+  color: rgb(110, 110, 110);
+  transition: color 0.2s;
+}
+
+.footer a:hover,
+.footer a:active {
+  border: none;
+  color: #fff;
+}
+
+.footer li {
+  display: inline-block;
+}
+
+.footer-nav {
+  display: flow-root;
+  float: left;
+  font-size: 80%;
+}
+
+.footer-nav li {
+  margin: 0 20px 0 0;
+}
+
+.footer-social {
+  display: flow-root;
+  float: right;
+}
+
+.footer-social li {
+  margin: 0 0 0 20px;
+}
+
+.sc-facebook {
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.sc-twitter {
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.sc-gplus {
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.sc-instagram {
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.sc-facebook:hover,
+.sc-facebook:active {
+  color: #3b5999;
+}
+
+.sc-twitter:hover,
+.sc-twitter:active {
+  color: #55acee;
+}
+
+.sc-gplus:hover,
+.sc-gplus:active {
+  color: #dd4b39;
+}
+
+.sc-instagram:hover,
+.sc-instagram:active {
+  color: #e4405f;
 }
