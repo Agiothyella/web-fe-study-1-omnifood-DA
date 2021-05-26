@@ -152,6 +152,8 @@
   }
 
   .plan-box div:nth-child(2) {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
   }
@@ -250,6 +252,8 @@
   }
 
   .city-detail {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
   }

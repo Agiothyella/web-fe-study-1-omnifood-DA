@@ -17,6 +17,11 @@ html {
   overflow-x: hidden;
 }
 header {
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(img/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(img/hero.jpg);
   background-size: cover;
@@ -100,7 +105,6 @@ cite {
 .unselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -131,6 +135,7 @@ a:visited {
   border-bottom: 1px solid #cb4902;
   color: #cb4902;
   text-decoration: none;
+  -webkit-transition: border 0.2s, color 0.2s;
   transition: border 0.2s, color 0.2s;
 }
 
@@ -152,6 +157,7 @@ input[type="submit"] {
   border-radius: 200px;
   color: #fff;
   border: 1px solid #fd5b03;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -187,6 +193,7 @@ input[type="submit"]:active {
   width: 1140px;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -218,6 +225,7 @@ input[type="submit"]:active {
   text-transform: uppercase;
   font-size: 90%;
   border-bottom: 2px solid transparent;
+  -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
@@ -282,8 +290,12 @@ input[type="submit"]:active {
 .meal-photo img {
   width: 100%;
   opacity: 50%;
+  -webkit-transform: scale(115%);
   transform: scale(115%);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
   vertical-align: bottom;
 }
 
@@ -292,12 +304,14 @@ input[type="submit"]:active {
   top: 50%;
   left: 50%;
   width: 80%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: black;
   text-align: center;
   font-weight: 400;
   text-shadow: 0px 0px 5px white;
   opacity: 0;
+  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 
@@ -307,6 +321,7 @@ input[type="submit"]:active {
 
 .meal-photo:hover img {
   opacity: 100%;
+  -webkit-transform: scale(100%);
   transform: scale(100%);
 }
 
@@ -384,6 +399,11 @@ input[type="submit"]:active {
 /* ------------------------- TESTIMONY ------------------------- */
 
 #testimony {
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("img/back-customers.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("img/back-customers.jpg");
   background-size: cover;
@@ -493,6 +513,8 @@ input[type="submit"]:active {
 }
 
 #message input[type="checkbox"] {
+  width: -webkit-min-content;
+  width: -moz-min-content;
   width: min-content;
   margin: 10px 5px 10px 0;
 }
@@ -556,6 +578,7 @@ footer .icon-small {
 .footer a:visited {
   border: none;
   color: rgb(110, 110, 110);
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -590,21 +613,25 @@ footer .icon-small {
 
 .sc-facebook {
   color: inherit;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
 .sc-twitter {
   color: inherit;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
 .sc-gplus {
   color: inherit;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
 .sc-instagram {
   color: inherit;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
