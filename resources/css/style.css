@@ -14,6 +14,7 @@ html {
   font-size: 20px;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -84,15 +85,6 @@ blockquote::before {
   content: "\201C";
   font-size: 400%;
 }
-
-/* blockquote::after {
-  display: block;
-  position: absolute;
-  bottom: 50px;
-  right: 8px;
-  content: "\201D";
-  font-size: 400%;
-} */
 
 cite {
   display: block;
@@ -236,14 +228,10 @@ input[type="submit"]:active {
 
 /* ------------------------- FEATURES ------------------------- */
 
-#features .long-copy {
-  margin: 0 auto 30px auto;
-}
-
 .long-copy {
   line-height: 140%;
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   text-align: justify;
 }
 
@@ -305,10 +293,10 @@ input[type="submit"]:active {
   left: 50%;
   width: 80%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: black;
   text-align: center;
   font-weight: 400;
-  text-shadow: 0px 0px 5px black;
+  text-shadow: 0px 0px 5px white;
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -318,7 +306,7 @@ input[type="submit"]:active {
 }
 
 .meal-photo:hover img {
-  opacity: 90%;
+  opacity: 100%;
   transform: scale(100%);
 }
 
@@ -429,15 +417,6 @@ input[type="submit"]:active {
   text-align: center;
 }
 
-/* #plan h3::after {
-  display: block;
-  height: 1px;
-  background-color: rgb(230, 230, 230);
-  content: " ";
-  width: 120px;
-  margin: 15px auto 0 auto;
-} */
-
 .plan-box {
   width: 90%;
   margin: 0 auto;
@@ -472,6 +451,11 @@ input[type="submit"]:active {
 
 .plan-box p {
   text-align: center;
+}
+
+.plan-box li p {
+  text-align: inherit;
+  display: inline;
 }
 
 .plan-price {

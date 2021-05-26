@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="vendors/css/normalize.css" />
     <link rel="stylesheet" href="vendors/css/grid.css" />
     <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="stylesheet" href="resources/css/queries.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
@@ -216,16 +217,18 @@
                 time!
               </p>
             </div>
-            <a href="#store" class="app-button"
-              ><img
-                src="resources/img/download-app.svg"
-                alt="Download from App Store"
-            /></a>
-            <a href="#play" class="app-button"
-              ><img
-                src="resources/img/download-app-android.png"
-                alt="Download from Google Play"
-            /></a>
+            <div class="app-dl">
+              <a href="#store" class="app-button"
+                ><img
+                  src="resources/img/download-app.svg"
+                  alt="Download from App Store"
+              /></a>
+              <a href="#play" class="app-button"
+                ><img
+                  src="resources/img/download-app-android.png"
+                  alt="Download from Google Play"
+              /></a>
+            </div>
           </div>
         </div>
       </section>
@@ -376,20 +379,20 @@
               <div>
                 <ul>
                   <li>
-                    <ion-icon name="checkmark" class="icon-small"></ion-icon> 1
-                    meal every day
+                    <ion-icon name="checkmark" class="icon-small"></ion-icon>
+                    <p>1 meal every day</p>
                   </li>
                   <li>
                     <ion-icon name="checkmark" class="icon-small"></ion-icon>
-                    Order 24/7
+                    <p>Order 24/7</p>
                   </li>
                   <li>
                     <ion-icon name="checkmark" class="icon-small"></ion-icon>
-                    Access to newest creations
+                    <p>Access to newest creations</p>
                   </li>
                   <li>
                     <ion-icon name="checkmark" class="icon-small"></ion-icon>
-                    Free delivery
+                    <p>Free delivery</p>
                   </li>
                 </ul>
               </div>
@@ -408,20 +411,20 @@
               <div>
                 <ul>
                   <li>
-                    <ion-icon name="checkmark" class="icon-small"></ion-icon> 1
-                    meal 10 days/month
+                    <ion-icon name="checkmark" class="icon-small"></ion-icon>
+                    <p>1 meal 10 days/month</p>
                   </li>
                   <li>
                     <ion-icon name="checkmark" class="icon-small"></ion-icon>
-                    Order 24/7
+                    <p>Order 24/7</p>
                   </li>
                   <li>
                     <ion-icon name="checkmark" class="icon-small"></ion-icon>
-                    Access to newest creations
+                    <p>Access to newest creations</p>
                   </li>
                   <li>
                     <ion-icon name="checkmark" class="icon-small"></ion-icon>
-                    Free delivery
+                    <p>Free delivery</p>
                   </li>
                 </ul>
               </div>
@@ -440,16 +443,16 @@
               <div>
                 <ul>
                   <li>
-                    <ion-icon name="checkmark" class="icon-small"></ion-icon> 1
-                    meal
+                    <ion-icon name="checkmark" class="icon-small"></ion-icon>
+                    <p>1 meal</p>
+                  </li>
+                  <li class="row">
+                    <ion-icon name="checkmark" class="icon-small"></ion-icon>
+                    <p>Order from 8 am to 12 pm</p>
                   </li>
                   <li>
                     <ion-icon name="checkmark" class="icon-small"></ion-icon>
-                    Order from 8 am to 12 pm
-                  </li>
-                  <li>
-                    <ion-icon name="checkmark" class="icon-small"></ion-icon>
-                    Free delivery
+                    <p>Free delivery</p>
                   </li>
                   <li>&nbsp;</li>
                 </ul>
@@ -540,7 +543,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col span-1-of-3">
+              <div class="col span-1-of-3 xs-hide">
                 <label>&nbsp;</label>
               </div>
               <div class="col span-2-of-3">
