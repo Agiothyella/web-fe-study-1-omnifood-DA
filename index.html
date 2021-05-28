@@ -32,8 +32,11 @@
               class="logo-white" />
             <img src="resources/img/logo.png" alt="Omnifood logo" class="logo"
           /></a>
-
-          <ul class="main-nav">
+          <div class="mobile-nav-icon unselectable">
+            <ion-icon class="icon-nav nav-menu" name="menu"></ion-icon>
+            <ion-icon class="icon-nav nav-close hid" name="close"></ion-icon>
+          </div>
+          <ul class="toggle-nav main-nav">
             <li><a href="#features">Food delivery</a></li>
             <li><a href="#how-to">How it works</a></li>
             <li><a href="#city">Our cities</a></li>
@@ -185,8 +188,17 @@
         <div class="row">
           <h2>How it works &ndash; Simple as 1, 2, 3</h2>
         </div>
-        <div class="row how-to-waypoint">
-          <div class="col span-1-of-2 step-box app-animate animate__animated">
+        <div class="row">
+          <div
+            class="
+              col
+              span-1-of-2
+              step-box
+              how-to-waypoint
+              app-animate
+              animate__animated
+            "
+          >
             <img
               src="resources/img/app-iPhone.png"
               alt="Order food on iPhone"
@@ -235,8 +247,8 @@
         <div class="row">
           <h2>We're currently in these cities</h2>
         </div>
-        <div class="row">
-          <div class="col span-1-of-4 box city-waypoint animate__animated">
+        <div class="row city-animate animate__animated">
+          <div class="col span-1-of-4 box city-waypoint">
             <img src="resources/img/lisbon.jpg" alt="Lisbon" />
             <h3>Lisbon</h3>
             <ul class="city-detail">
@@ -366,8 +378,8 @@
         <div class="row">
           <h2>Start eating healthy today</h2>
         </div>
-        <div class="row plan-waypoint">
-          <div class="col span-1-of-3">
+        <div class="row">
+          <div class="col span-1-of-3 plan-waypoint">
             <div class="plan-box plan-animate animate__animated">
               <div>
                 <h3>Premuim</h3>

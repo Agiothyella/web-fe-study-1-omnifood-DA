@@ -290,8 +290,12 @@
     margin: 0 10px;
   }
 
-  /* SIDE NAVIGATION */
+  /* MOBILE NAVIGATION */
   .main-nav {
     display: none;
+  }
+
+  .mobile-nav-icon {
+    display: inline-block;
   }
 }

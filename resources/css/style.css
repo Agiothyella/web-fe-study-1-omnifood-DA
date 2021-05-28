@@ -110,6 +110,18 @@ cite {
   user-select: none;
 }
 
+.sticky-waypoint {
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+}
+
+.hid {
+  display: none;
+}
+
 /* ------------------------- ICON ------------------------- */
 
 .icon-big {
@@ -125,6 +137,17 @@ cite {
   font-size: 130%;
   text-align: center;
   vertical-align: middle;
+}
+
+.icon-nav {
+  color: #fff;
+  font-size: 250%;
+}
+
+.sticky .icon-nav {
+  margin: 5px 0;
+  color: #333;
+  font-size: 200%;
 }
 
 /* ------------------------- LINK ------------------------- */
@@ -270,12 +293,57 @@ input[type="submit"]:active {
   display: block;
 }
 
-.waypoint {
-  transition: 0.1s;
-  -webkit-transition: 0.1s;
-  -moz-transition: 0.1s;
-  -ms-transition: 0.1s;
-  -o-transition: 0.1s;
+/* ------------------------- MOBILE NAVIGATION ------------------------- */
+.mobile-nav-icon {
+  display: none;
+  float: right;
+  margin: 45px 0 0 0;
+  cursor: pointer;
+}
+
+.sticky .mobile-nav-icon {
+  margin: 8px 0 0 0;
+}
+
+.mobile-nav {
+  float: right;
+  margin: 20px 30px;
+}
+
+.mobile-nav li {
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+.mobile-nav li a:link,
+.mobile-nav li a:visited,
+.mobile-nav li a:hover,
+.mobile-nav li a:active {
+  color: #fff;
+  border: 0;
+}
+
+.mobile-nav li a:hover,
+.mobile-nav li a:active {
+  color: #fd5b03;
+}
+
+.sticky .mobile-nav {
+  margin: 20px 30px 10px 0;
+}
+
+.sticky .mobile-nav li a:link,
+.sticky .mobile-nav li a:visited,
+.sticky .mobile-nav li a:hover,
+.sticky .mobile-nav li a:active {
+  color: #555;
+  border: 0;
+  padding: 0;
+}
+
+.sticky .mobile-nav li a:hover,
+.sticky .mobile-nav li a:active {
+  color: #fd5b03;
 }
 
 /* ------------------------- FEATURES ------------------------- */

@@ -32,7 +32,7 @@ const animateHowTo = new Waypoint({
 const animateCity = new Waypoint({
   element: document.querySelector(".city-waypoint"),
   handler: function () {
-    document.querySelector(".city-waypoint").classList.add("animate__fadeIn");
+    document.querySelector(".city-animate").classList.add("animate__fadeIn");
   },
   offset: "bottom-in-view",
 });
@@ -43,4 +43,14 @@ const animatePlan = new Waypoint({
     document.querySelector(".plan-animate").classList.add("animate__pulse");
   },
   offset: "bottom-in-view",
+});
+
+// ------------------------- MOBILE NAVIGATION ------------------------- //
+const nav = document.querySelector(".mobile-nav-icon");
+
+nav.addEventListener(`click`, function () {
+  document.querySelector(".nav-menu").classList.toggle("hid");
+  document.querySelector(".nav-close").classList.toggle("hid");
+  document.querySelector(".toggle-nav").classList.toggle("mobile-nav");
+  document.querySelector(".toggle-nav").classList.toggle("main-nav");
 });
