@@ -199,11 +199,19 @@ input[type="submit"]:active {
 
 /* ------------------------- NAVIGATION ------------------------- */
 
-.logo {
+.logo-white {
   height: 100px;
   width: auto;
   float: left;
   margin: 20px 0 0 0;
+}
+
+.logo {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
 }
 
 .main-nav {
@@ -232,6 +240,42 @@ input[type="submit"]:active {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #fd5b03;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 1px 5px #555;
+  z-index: 9;
+}
+
+.sticky .main-nav {
+  margin: 20px 0;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 18px 0;
+  color: #555;
+}
+
+.sticky .logo-white {
+  display: none;
+}
+
+.sticky .logo {
+  display: block;
+}
+
+.waypoint {
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
 }
 
 /* ------------------------- FEATURES ------------------------- */
@@ -308,6 +352,7 @@ input[type="submit"]:active {
   transform: translate(-50%, -50%);
   color: black;
   text-align: center;
+  font-size: 110%;
   font-weight: 400;
   text-shadow: 0px 0px 5px white;
   opacity: 0;
@@ -653,4 +698,13 @@ footer .icon-small {
 .sc-instagram:hover,
 .sc-instagram:active {
   color: #e4405f;
+}
+
+/* ------------------------- ANIMATIONS ------------------------- */
+.animate__animated {
+  opacity: 0;
+}
+
+.plan-waypoint .animate__animated {
+  opacity: 1;
 }

@@ -13,35 +13,31 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Omnifood</title>
   </head>
   <body>
-    <!-- Ionicon Script -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
-    ></script>
-
     <!-- Header -->
     <header>
       <!-- Navigation -->
-      <nav>
+      <nav class="sticky-waypoint">
         <div class="row">
           <a href="#"
             ><img
               src="resources/img/logo-white.png"
               alt="Omnifood logo"
-              class="logo"
+              class="logo-white" />
+            <img src="resources/img/logo.png" alt="Omnifood logo" class="logo"
           /></a>
+
           <ul class="main-nav">
-            <li><a href="#favourite">Food delivery</a></li>
+            <li><a href="#features">Food delivery</a></li>
             <li><a href="#how-to">How it works</a></li>
             <li><a href="#city">Our cities</a></li>
-            <li><a href="#sign">Sign up</a></li>
+            <li><a href="#plan">Sign up</a></li>
           </ul>
         </div>
       </nav>
@@ -52,7 +48,7 @@
           Hello super healthy meals.
         </h1>
         <a href="#plan" class="btn btn-main">I’m hungry </a>
-        <a href="#features" class="btn btn-ghost">Show me more</a>
+        <a href="#favourite" class="btn btn-ghost">Show me more</a>
       </div>
     </header>
     <!-- Main -->
@@ -67,7 +63,7 @@
             that, we’re really good at it, we promise!
           </p>
         </div>
-        <div class="row">
+        <div class="row features-animate animate__animated">
           <div class="col span-1-of-4 box">
             <ion-icon name="calendar" class="icon-big"></ion-icon>
             <h3>Up to 365 days/year</h3>
@@ -77,7 +73,7 @@
               more flexibly if that's your style.
             </p>
           </div>
-          <div class="col span-1-of-4 box">
+          <div class="col span-1-of-4 box features-waypoint">
             <ion-icon name="stopwatch" class="icon-big"></ion-icon>
             <h3>Ready in 20 minutes</h3>
             <p>
@@ -189,15 +185,15 @@
         <div class="row">
           <h2>How it works &ndash; Simple as 1, 2, 3</h2>
         </div>
-        <div class="row">
-          <div class="col span-1-of-2 step-box">
+        <div class="row how-to-waypoint">
+          <div class="col span-1-of-2 step-box app-animate animate__animated">
             <img
               src="resources/img/app-iPhone.png"
               alt="Order food on iPhone"
               class="app-screen"
             />
           </div>
-          <div class="col span-1-of-2 step-box">
+          <div class="col span-1-of-2 step-box step-animate animate__animated">
             <div class="app-step">
               <div>1</div>
               <p>
@@ -240,7 +236,7 @@
           <h2>We're currently in these cities</h2>
         </div>
         <div class="row">
-          <div class="col span-1-of-4 box">
+          <div class="col span-1-of-4 box city-waypoint animate__animated">
             <img src="resources/img/lisbon.jpg" alt="Lisbon" />
             <h3>Lisbon</h3>
             <ul class="city-detail">
@@ -370,9 +366,9 @@
         <div class="row">
           <h2>Start eating healthy today</h2>
         </div>
-        <div class="row">
+        <div class="row plan-waypoint">
           <div class="col span-1-of-3">
-            <div class="plan-box">
+            <div class="plan-box plan-animate animate__animated">
               <div>
                 <h3>Premuim</h3>
                 <p class="plan-price">399$<span> / month</span></p>
@@ -610,9 +606,26 @@
       </div>
     </footer>
 
+    <!-- Jquery 3.x -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
     <!-- Compatibility Script - for old browser -->
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+
+    <!-- Ionicon Script -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Script -->
+    <script src="vendors/js/noframework.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
   </body>
 </html>

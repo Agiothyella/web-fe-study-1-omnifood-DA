@@ -206,15 +206,6 @@
     padding: 0px 5%;
   }
 
-  /* NAVIGATION */
-  .logo {
-    height: 80px;
-  }
-
-  .main-nav {
-    display: none;
-  }
-
   /* FEATURES */
   #features .span-1-of-4 {
     width: 100%;
@@ -297,5 +288,10 @@
 
   .footer-nav li {
     margin: 0 10px;
+  }
+
+  /* SIDE NAVIGATION */
+  .main-nav {
+    display: none;
   }
 }
