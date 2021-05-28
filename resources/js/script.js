@@ -53,7 +53,4 @@ nav.addEventListener(`click`, function () {
   document.querySelector(".nav-close").classList.toggle("hid");
   document.querySelector(".toggle-nav").classList.toggle("mobile-nav");
   document.querySelector(".toggle-nav").classList.toggle("main-nav");
-
-  document.querySelector(".toggle-nav").classList.toggle("animate__fadeInDown");
-  // document.querySelector(".toggle-nav").classList.toggle("animate__fadeOutUp");
 });
