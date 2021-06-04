@@ -422,7 +422,7 @@ input[type="submit"]:active {
   text-align: center;
   font-size: 110%;
   font-weight: 400;
-  text-shadow: 0px 0px 5px white;
+  text-shadow: 1px 1px 3px white, -1px -1px 3px white;
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
