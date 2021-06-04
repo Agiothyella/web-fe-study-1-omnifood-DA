@@ -212,8 +212,10 @@
   }
 
   /* FAVOURITE */
-  .meal-photo figcaption {
-    font-size: 90%;
+
+  .meals-showcase li {
+    float: left;
+    width: 50%;
   }
 
   /* MOBILE APP */
