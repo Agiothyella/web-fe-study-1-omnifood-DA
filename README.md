@@ -1,4 +1,4 @@
-# web-fe-study-1-omnifood-DA
+Omnifood
 Omnifood website FE study
 
 Developed by me, Agiothyella.
