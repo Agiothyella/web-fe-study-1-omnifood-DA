@@ -1,4 +1,5 @@
 Omnifood website FE study
 
-Developed by me, Agiothyella.
-Design by Jonas Schmedtmann.
+Demo: https://agiothyella.github.io/web-fe-study-1-omnifood-DA
+
+Developed by me, Agiothyella. Design by Jonas Schmedtmann.
