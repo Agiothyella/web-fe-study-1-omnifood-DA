@@ -1,0 +1,404 @@
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* 1344PX */
+@media only screen and (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-1 {
+    font-size: 4.4rem;
+  }
+
+  .section__testimonials {
+    grid-template-columns: 65fr 35fr;
+  }
+
+  .testimonials__gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials__gallery__item:nth-child(1),
+  .testimonials__gallery__item:nth-child(12) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-2 {
+    font-size: 3.6rem;
+  }
+
+  .heading-3 {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .top__nav__list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonials__container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+@media only screen and (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero__textbox {
+    text-align: center;
+  }
+
+  .hero__imagebox {
+    text-align: center;
+  }
+
+  .hero__image {
+    width: 60%;
+  }
+
+  .hero__delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step__number {
+    font-size: 7.4rem;
+  }
+
+  .meals__meal__content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section__testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials__gallery {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta__form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 10;
+  }
+
+  .top__nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100vw);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: all 0.5s ease-out;
+  }
+
+  .top__nav__list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .top__nav__link:link,
+  .top__nav__link:visited {
+    font-size: 3rem;
+  }
+
+  .mobile-nav__open .top__nav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  .mobile-nav__open .mobile-nav__icon[name="close-outline"] {
+    display: block;
+    /* position: fixed;
+    top: 18px;
+    right: 26px; */
+  }
+
+  .mobile-nav__open .mobile-nav__icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .pricing__plan--complete::after {
+    top: 5%;
+    right: -20%;
+  }
+}
+
+@media only screen and (max-width: 44em) {
+  .grid--3col,
+  .grid--4col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .list--meals {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .meals__diet {
+    grid-column: 1 / -1;
+    padding: 0 3.2rem;
+  }
+
+  .heading-2 {
+    margin-bottom: 4.8rem;
+  }
+
+  .step__img-box::before {
+    width: 70%;
+    padding-bottom: 70%;
+  }
+
+  .step__img-box::after {
+    width: 55%;
+    padding-bottom: 55%;
+  }
+
+  .step__img {
+    width: 45%;
+  }
+
+  .pricing__plan {
+    width: 100%;
+    padding: 4.8rem 3.2rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .footer__left,
+  .footer__contact {
+    grid-column: span 3;
+  }
+
+  .footer__sitemap {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .meals__all-recipes {
+    margin-top: 4.8rem;
+  }
+
+  .pricing__plan--complete::after {
+    top: 6%;
+    right: -18%;
+  }
+}
+
+@media only screen and (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2col,
+  .grid--3col,
+  .grid--4col {
+    grid-template-columns: 1fr;
+  }
+
+  .section__hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero__image {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 3.2rem;
+  }
+
+  .step__img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .step__img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step__img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step__img-box::before {
+    width: 60%;
+    padding-bottom: 60%;
+  }
+
+  .step__img-box::after {
+    width: 45%;
+    padding-bottom: 45%;
+  }
+
+  .step__img {
+    width: 35%;
+  }
+
+  .meals__meal__attributes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem 6rem;
+  }
+
+  .meals__diet {
+    padding: 0;
+  }
+
+  .list--meals {
+    column-gap: 2rem !important;
+  }
+
+  .testimonials__collection {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+
+  .testimonials__gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .testimonials__gallery__item:nth-child(1),
+  .testimonials__gallery__item:nth-child(12) {
+    display: inline;
+  }
+
+  .pricing__plan--complete::after {
+    top: 6%;
+    right: -13%;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta__textbox {
+    padding: 3.2rem;
+  }
+
+  .cta__imgbox {
+    grid-row: 1;
+    height: 32rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+}
+
+/* FLEXBOX FIX */
+
+.no-flexbox-gap .top__nav__list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list__item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .hero__delivered-imgs {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meals__meal__attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meals__meal__icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer__sitemap div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .footer__social li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer__navigation li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .top__nav__list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .top__nav__list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
